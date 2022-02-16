@@ -16,13 +16,13 @@ body {
   color: $white;
   background-image: $backgroundImage;
   font-size: 20px;
-  padding: 2em;
+  // padding: 2em;
 }
 
 .top {
-  height: 260px;
-
+  height: 460px;
   &__heading {
+    grid-row: 1/2;
     text-transform: uppercase;
     text-align: center;
     font-size: 1.5rem;
@@ -30,6 +30,7 @@ body {
     color: $heading-color;
     font-weight: 100;
     letter-spacing: 0.5rem;
+    grid-row: 3/4;
   }
 
   &__mainInfo {
@@ -77,7 +78,6 @@ body {
 
 .bottom {
   height: 140px;
-
   &__headings,
   &__weatherInfo {
     display: flex;
