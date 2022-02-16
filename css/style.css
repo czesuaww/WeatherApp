@@ -1,36 +1,7 @@
-input {
-  font-size: 0.9rem;
-  padding: 0.5em;
-  margin-top: 10px;
-  min-width: 100%;
-  background: none;
-  border: none;
-  color: #fff;
-  border-bottom: 2px solid #ddd;
-}
-
-input::-webkit-input-placeholder {
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-}
-
-input:-ms-input-placeholder {
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-}
-
-input::-ms-input-placeholder {
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-}
-
-input::placeholder {
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-}
-
 .wrapper {
+  background-image: linear-gradient(315deg, #30a9ce 0%, #3476d8 74%);
   border: 2px solid #fff;
+  border-radius: 25px;
   margin: 0 auto;
   width: 100%;
   max-width: 400px;
@@ -49,7 +20,6 @@ body {
   font-size: 20px;
   background-color: royalblue;
   width: 100%;
-  height: 100vh;
 }
 
 .box {
@@ -63,16 +33,18 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  min-height: 100vh;
   padding: 2em;
+}
+
+.box .top {
+  padding: 0.5em;
 }
 
 .box .top__heading {
   text-transform: uppercase;
   text-align: center;
-  font-size: 1.2rem;
-  padding-top: 1em;
-  padding-bottom: 2em;
+  font-size: 1.8rem;
+  margin: 1em;
   color: #24248b;
   font-weight: 100;
   letter-spacing: 0.5rem;
@@ -89,10 +61,36 @@ body {
 }
 
 .box .top__mainInfo-cityName {
-  color: pink;
-  font-size: 1rem;
+  color: #fff;
+  font-size: 1.5rem;
   text-align: center;
+  font-weight: 500;
   margin-bottom: 0.5em;
+}
+
+.box .top__mainInfo input {
+  font-size: 0.9rem;
+  padding: 0.5em;
+  margin-top: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-bottom: 2px solid #ddd;
+}
+
+.box .top__mainInfo input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.box .top__mainInfo input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.box .top__mainInfo input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.box .top__mainInfo input::placeholder {
+  color: #fff;
 }
 
 .box .top__mainInfo-buttons {
@@ -101,22 +99,24 @@ body {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   margin: 0.5em;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 .box .top__mainInfo-buttons-send, .box .top__mainInfo-buttons-conv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 15px;
   font-size: 0.7rem;
-  padding: 10px;
-  text-align: center;
+  padding: 0.7em;
   color: #fff;
   font-weight: bold;
-  background: none;
+  background: #5d73b4;
   border-radius: 5px;
   text-transform: uppercase;
-  margin: auto 10px;
+  margin: auto 2em;
   cursor: pointer;
   -webkit-transition: background-color 0.3s, color 0.3s;
   transition: background-color 0.3s, color 0.3s;
@@ -129,25 +129,51 @@ body {
 
 .box .top__mainInfo-warning {
   text-align: center;
-  margin-top: 10px;
-  font-size: 1rem;
-  color: tomato;
-  padding-bottom: 1.5em;
+  text-transform: uppercase;
+  padding-top: 1em;
+  font-size: 1.2rem;
+  color: red;
+  padding-bottom: 0em;
 }
 
 .box .top__mainInfo-photo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
   padding-bottom: 25px;
   -o-object-fit: contain;
      object-fit: contain;
+  padding-bottom: 25px;
+  padding: 1.2em;
+  object-fit: contain;
+}
+
+.box .bottom {
+  height: 140px;
+}
+
+.box .bottom__headings, .box .bottom__weatherInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box .bottom__headings p, .box .bottom__weatherInfo p {
+  width: 33.3%;
+  text-align: center;
+}
+
+.box .bottom__headings {
+  height: 35%;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 100;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.box .bottom__weatherInfo {
+  height: 65%;
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */

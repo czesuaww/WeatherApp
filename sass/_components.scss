@@ -1,27 +1,10 @@
 @import "./colors";
 
-input {
-  font-size: 0.9rem;
-  padding: 0.5em;
-  margin-top: 10px;
-  min-width: 100%;
-  background: none;
-  border: none;
-  color: $white;
-  border-bottom: 2px solid $border-color;
-}
-
-input::placeholder {
-  color: $white;
-  font-family: "Montserrat", sans-serif;
-}
-
 .wrapper {
-  // background-color: $back-color;
+  background-image: $backgroundImage;
   border: 2px solid $white;
+  border-radius: 25px;
   margin: 0 auto;
   width: 100%;
   max-width: 400px;
-  // padding-top: 2em;
-  // padding: 2em;
 }
