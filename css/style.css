@@ -1,0 +1,162 @@
+input {
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  margin-top: 10px;
+  background: none;
+  border: none;
+  color: #fff;
+  border-bottom: 2px solid #ddd;
+}
+
+input::-webkit-input-placeholder {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+input:-ms-input-placeholder {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+input::-ms-input-placeholder {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+input::placeholder {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #fff;
+  border-radius: 25px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  padding-top: 2em;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  background-image: linear-gradient(315deg, #30a9ce 0%, #3476d8 74%);
+  font-size: 20px;
+  padding: 2em;
+}
+
+.top {
+  height: 260px;
+}
+
+.top__heading {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 30px;
+  color: #5773c9;
+  font-weight: 100;
+  letter-spacing: 0.5rem;
+}
+
+.top__mainInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top__mainInfo-cityName {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.top__mainInfo-send {
+  padding: 10px;
+  margin-left: 20px;
+  color: #fff;
+  font-weight: bold;
+  background: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin: auto 0;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.top__mainInfo-send:hover {
+  color: #333;
+  background-color: #ddd;
+}
+
+.top__mainInfo-warning {
+  margin-top: 10px;
+  font-size: 14px;
+  color: tomato;
+}
+
+.top__mainInfo-photo {
+  padding-bottom: 25px;
+  width: 140px;
+  height: 140px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.bottom {
+  height: 140px;
+}
+
+.bottom__headings, .bottom__weatherInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bottom__headings p, .bottom__weatherInfo p {
+  width: 33.3%;
+  text-align: center;
+}
+
+.bottom__headings {
+  height: 35%;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 100;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.bottom__weatherInfo {
+  height: 65%;
+  font-size: 16px;
+}
+/*# sourceMappingURL=style.css.map */

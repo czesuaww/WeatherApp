@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3710696c33.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="top">
+        <h1 class="top__heading">weather app</h1>
+        <div class="top__mainInfo">
+          <div>
+            <h3 class="top__mainInfo-cityName"></h3>
+            <input type="text" placeholder="Wpisz nazwę miasta..." />
+            <button class="top__mainInfo-send">Wyślij</button>
+            <p class="top__mainInfo-warning"></p>
+          </div>
+          <img
+            src="./img/unknown.png"
+            alt="Obrazek przedstawiający pogodę"
+            class="top__mainInfo-photo"
+          />
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="bottom__headings">
+          <p class="bottom__headings-weather">Weather:</p>
+          <p class="bottom__headings-temperature">Temperature:</p>
+          <p class="bottom__headings-humidity">Humidity:</p>
+        </div>
+        <div class="bottom__weatherInfo">
+          <p class="bottom__weatherInfo-weather">-</p>
+          <p class="bottom__weatherInfo-temperature">-</p>
+          <p class="bottom__weatherInfo-humidity">-</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
