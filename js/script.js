@@ -53,9 +53,9 @@ const prepareDOMEvents = () => {
         } else if (status.id >= 500 && status.id < 600) {
           $photo.setAttribute("src", "../img/rain.png");
         } else if (status.id >= 600 && status.id < 700) {
-          $photo.setAttribute("src", "../img/ice.png");
+          $photo.setAttribute("src", "../img/snowy.png");
         } else if (status.id >= 700 && status.id < 800) {
-          $photo.setAttribute("src", "../img/fog.png");
+          $photo.setAttribute("src", "../img/foog.png");
         } else if (status.id === 800) {
           $photo.setAttribute("src", "../img/sun.png");
         } else if (status.id >= 800 && status.id < 900) {

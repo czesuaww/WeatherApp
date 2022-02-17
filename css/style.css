@@ -1,5 +1,5 @@
 .wrapper {
-  background-image: linear-gradient(315deg, #30a9ce 0%, #3476d8 74%);
+  background-image: linear-gradient(315deg, #a1c4fd 0%, #c2e9fb 100%);
   border: 2px solid #fff;
   border-radius: 25px;
   margin: 0 auto;
@@ -18,8 +18,9 @@ body {
   font-family: "Montserrat", sans-serif;
   color: #fff;
   font-size: 20px;
-  background-color: royalblue;
+  background-image: linear-gradient(315deg, #48c6ef 0%, #6f86d6 74%);
   width: 100%;
+  min-height: 100vh;
 }
 
 .box {
@@ -61,7 +62,7 @@ body {
 }
 
 .box .top__mainInfo-cityName {
-  color: #fff;
+  color: black;
   font-size: 1.5rem;
   text-align: center;
   font-weight: 500;
@@ -141,7 +142,7 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
   padding-bottom: 25px;
-  padding: 1.2em;
+  padding: 3em;
   object-fit: contain;
 }
 
