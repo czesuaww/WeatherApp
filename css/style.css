@@ -95,20 +95,17 @@ body {
 }
 
 .box .top__mainInfo-buttons {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  margin: 0.5em;
-}
-
-.box .top__mainInfo-buttons-send, .box .top__mainInfo-buttons-conv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0.5em;
+}
+
+.box .top__mainInfo-buttons-send {
+  width: 100px;
   min-width: 15px;
   font-size: 0.7rem;
   padding: 0.7em;
@@ -123,7 +120,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.box .top__mainInfo-buttons-send:hover, .box .top__mainInfo-buttons-conv:hover {
+.box .top__mainInfo-buttons-send:hover {
   color: #333;
   background-color: #ddd;
 }

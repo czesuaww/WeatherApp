@@ -62,14 +62,12 @@ body {
       }
 
       &-buttons {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        justify-content: center;
         margin: 0.5em;
 
-        &-send,
-        &-conv {
-          display: flex;
-          justify-content: center;
+        &-send {
+          width: 100px;
           min-width: 15px;
           font-size: 0.7rem;
           padding: 0.7em;
