@@ -64,7 +64,7 @@ const prepareDOMEvents = () => {
           $photo.setAttribute("src", "./img/unknown.png");
         }
       })
-      .catch(() => ($warning.textContent = "Wpisz poprawną miastę miasta"));
+      .catch(() => ($warning.textContent = "Please enter a valid city name"));
   };
 
   const enterCheck = (e) => {
